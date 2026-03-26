@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Saudi Arabia",
+    "code": "KSA",
+    "homepage": "https://www.google.com.sa/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&gl=sa&hl=ar-SA",
+    "inside": "https://www.google.com.sa/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&dpr=1&gl=sa&hl=ar-SA",
+    "bottom": "https://www.google.com.sa/search?q={keyword}&sclient=gws-wiz-serp&gl=sa&hl=ar-SA"
+  },
+  {
+    "name": "Egypt",
+    "code": "EGY",
+    "homepage": "https://www.google.com.eg/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&gl=eg&hl=ar-EG",
+    "inside": "https://www.google.com.eg/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&dpr=1&gl=eg&hl=ar-EG",
+    "bottom": "https://www.google.com.eg/search?q={keyword}&sclient=gws-wiz-serp&gl=eg&hl=ar-EG"
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "UAE",
+    "homepage": "https://www.google.ae/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&gl=ae&hl=ar-AE",
+    "inside": "https://www.google.ae/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&dpr=1&gl=ae&hl=ar-AE",
+    "bottom": "https://www.google.ae/search?q={keyword}&sclient=gws-wiz-serp&gl=ae&hl=ar-AE"
+  },
+  {
+    "name": "Iraq",
+    "code": "IRQ",
+    "homepage": "https://www.google.com.iq/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&gl=iq&hl=ar-IQ",
+    "inside": "https://www.google.com.iq/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&dpr=1&gl=iq&hl=ar-IQ",
+    "bottom": "https://www.google.com.iq/search?q={keyword}&sclient=gws-wiz-serp&gl=iq&hl=ar-IQ"
+  },
+  {
+    "name": "Kuwait",
+    "code": "KWT",
+    "homepage": "https://www.google.com.kw/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&gl=kw&hl=ar-KW",
+    "inside": "https://www.google.com.kw/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&dpr=1&gl=kw&hl=ar-KW",
+    "bottom": "https://www.google.com.kw/search?q={keyword}&sclient=gws-wiz-serp&gl=kw&hl=ar-KW"
+  },
+  {
+    "name": "Qatar",
+    "code": "QAT",
+    "homepage": "https://www.google.com.qa/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&gl=qa&hl=ar-QA",
+    "inside": "https://www.google.com.qa/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&dpr=1&gl=qa&hl=ar-QA",
+    "bottom": "https://www.google.com.qa/search?q={keyword}&sclient=gws-wiz-serp&gl=qa&hl=ar-QA"
+  },
+  {
+    "name": "Bahrain",
+    "code": "BAH",
+    "homepage": "https://www.google.com.bh/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&gl=bh&hl=ar-BH",
+    "inside": "https://www.google.com.bh/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&dpr=1&gl=bh&hl=ar-BH",
+    "bottom": "https://www.google.com.bh/search?q={keyword}&sclient=gws-wiz-serp&gl=bh&hl=ar-BH"
+  },
+  {
+    "name": "Morocco",
+    "code": "MAR",
+    "homepage": "https://www.google.co.ma/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&gl=ma&hl=ar-MA",
+    "inside": "https://www.google.co.ma/complete/search?q={keyword}&client=gws-wiz-serp&xssi=t&gs_pcrt=undefined&authuser=0&dpr=1&gl=ma&hl=ar-MA",
+    "bottom": "https://www.google.co.ma/search?q={keyword}&sclient=gws-wiz-serp&gl=ma&hl=ar-MA"
+  }
+]
