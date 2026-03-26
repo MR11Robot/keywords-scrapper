@@ -12,19 +12,6 @@ A scheduled web scraping bot that automatically collects keyword data across mul
 
 ---
 
-## Project Structure
-```
-├── app.py                  # Flask app & scheduler
-├── src/
-│   ├── bot.py              # Core bot logic & threading
-│   └── config.py           # Paths & environment config
-├── countries.json          # List of target countries
-└── output/                 # Generated Excel files
-    └── Keywords_Report.xlsx
-```
-
----
-
 ## Requirements
 - Python 3.14+
 - [Poetry](https://python-poetry.org/)
