@@ -1,20 +1,26 @@
 # Keywords Scrapper 🔍
-A scheduled web scraping bot that automatically collects keyword data across multiple countries and exports the results to Excel. Built as part of the [django-coupons](https://github.com/MR11Robot/django-coupons) ecosystem.
+A scheduled web scraping bot that automatically collects keyword suggestions from Google across multiple countries and exports the results to Excel. Built as part of the [django-coupons](https://github.com/MR11Robot/django-coupons) ecosystem.
 
 ---
 
 ## What It Does
-- Reads a list of **keywords and countries** to scrape
-- Scrapes keyword data for each country combination
-- Saves results and exports to **Excel**
+- Reads **keywords and target countries** from **Google Sheets**
+- For each keyword, scrapes Google suggestions using **3 methods**:
+  - **Homepage** — autocomplete suggestions from the Google homepage
+  - **Inside Page** — suggestions from Google's internal search page
+  - **Related Bottom** — related searches at the bottom of results (via **ScrapeOps proxy**)
+- Deduplicates results and saves them to **SQLite**
+- Exports a structured **Excel report** with each country as a sheet and each keyword as a column
 - Runs automatically every **Thursday at 00:00** via a built-in scheduler
-- Exposes a **REST API** to start/stop the bot and download reports
+- Exposes a **REST API** to start/stop the bot and download the report
 
 ---
 
 ## Requirements
 - Python 3.14+
 - [Poetry](https://python-poetry.org/)
+- A [ScrapeOps](https://scrapeops.io/) API key
+- A Google Cloud service account with **Sheets API** access
 
 ---
 
@@ -38,6 +44,29 @@ Create a `.env` file in the root:
 HOST=127.0.0.1
 PORT=5000
 DEBUG=False
+
+API=your_scrapeops_api_key
+SPREADSHEET_ID=your_google_spreadsheet_id
+GOOGLE_CREDENTIALS=keys.json   # optional, defaults to keys.json
+```
+
+**4. Add Google Sheets credentials**
+
+Place your Google service account JSON file as `keys.json` in the root directory.
+
+**5. Configure countries**
+
+Edit `countries.json` to define your target countries. Each entry requires:
+```json
+[
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "homepage": "https://...",
+    "inside": "https://...",
+    "bottom": "https://..."
+  }
+]
 ```
 
 ---
@@ -66,10 +95,10 @@ poetry run app --host 0.0.0.0 --port 8080 --debug
 ```json
 {
   "status": true,
-  "started_at": "2026-03-26T00:00:00",
+  "started_at": "2026-03-26 09:00:00 PM",
   "current_keyword": "example keyword",
   "current_country": "Egypt",
-  "current_country_progress": 42
+  "current_country_progress": "(5/120)"
 }
 ```
 
